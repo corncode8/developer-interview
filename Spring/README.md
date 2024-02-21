@@ -338,7 +338,8 @@
 
 #### 참고
 * `@ManyToOne`과 같은 연관 관계가 있을 경우
-* 지연로딩: 연관 테이블은 조회하지 않고, 연관 관계가 실제로 사용되는 시점에 조회
+* 지연로딩: 연관 테이블은 조회하지 않고, 연관 관계가 실제로 사용되는 시점에 조회,
+           영속성 컨텍스트에 있으면 영속성 컨텍스트에 있는 엔티티를 사용하고 없으면 SQL을 실행한다.
 * 즉시로딩: 연관 테이블까지 바로 조회 <br>
   -> 많은 데이터가 조회될 수 있음 
 
@@ -411,14 +412,32 @@
 
 
 <details>
-<summary style="font-size:20px">JPA에서 Entity Id에 Long을 사용해야 되는 이유</summary>
+<summary style="font-size:20px">Fetch Join과 일반 Join의 차이</summary>
 <div markdown="1"> 
 
-* Wrapper Type인 Long을 사용해야 Null을 사용할 수 있음
-* 하이버네이트 공식 문서에도 Nullable한 값을 사용하라고 권장 
+* 페치 조인을 사용할 때만 연관된 엔티티도 함께 조회(즉시 로딩) 
+* 페치 조인은 객체 그래프를 SQL 한번에 조회하는 개념
+
+#### Fetch Join 특징과 한계
+* 둘 이상의 컬렉션은 페치 조인 할 수 없다. 
+* 컬렉션을 페치 조인하면 페이징 API를 사용할 수 없다.
+* 연관된 엔티티들을 SQL 한 번으로 조회 - 성능 최적화
+* 최적화가 필요한 곳은 페치 조인 적용
 
 </div>
 </details>
+
+
+<details>
+<summary style="font-size:20px">JPA에서 Entity Id에 Long을 사용해야 되는 이유</summary>
+<div markdown="1"> 
+
+* Wrapper Type인 Long을 사용해야 Null을 사용할 수 있음 
+* Nullable한 값을 사용하여 객체 참조를 더 유연하게 다룰 수 있다.
+
+</div>
+</details>
+
 
 
 <details>
