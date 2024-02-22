@@ -25,7 +25,13 @@
 <div markdown="1">
 
 * 정렬 기준으로 봤을 때, `값이 동일한 Element가 있어도 정렬 전의 순서와 정렬 후의 순서가 동일함을 보장`하는 것
+  
+### Stable
+* Insertion, Merge, Bubble
 
+### Unstable
+* Heap, Selection, Heap
+  
 </div>
 </details>
 
