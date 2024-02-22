@@ -579,7 +579,8 @@ public class TestApplication {
 <summary style="font-size:20px">MVC 패턴</summary>
 <div markdown="1">
 
-* Model, View, Controller라고 하는 컴포넌트로 분리하여 `비지니스 처리 로직`과 사용자 `인터페이스 요소`를 분리시켜 서로 영향없이 개발하기 수월
+* MVC 패턴은 모델, 뷰, 컨트롤러 각각의 역할을 명확히 분리함으로써 애플리케이션 개발을 체계적이고 효율적으로 만들어주는 설계 방법론
+* 복잡한 애플리케이션을 더 관리하기 쉽고, 유지보수가 용이하며, 다양한 개발자가 협업하기에 적합한 구조를 제공
 
 </div>
 </details>
