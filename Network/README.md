@@ -480,3 +480,14 @@
 
 </div>
 </details>
+
+<details>
+<summary style="font-size:20px">웹 개발시 보안에서 유의할 점</summary>
+<div markdown="1">
+
+* 네트워크 보안
+* IP 또는 포트에 대한 접근 제어나 트래픽 유해성 검사 등 웹이 운용되는 시스템 보안
+* 마지막으로 어플리케이션 계층 보안
+
+</div>
+</details>
