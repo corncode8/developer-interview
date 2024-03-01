@@ -387,6 +387,12 @@
 <summary style="font-size:20px">CPU 스케줄링 알고리즘</summary>
 <div markdown="1">
 
+#### 선점형
+* 라운드 로빈, SRT, 다단계 큐
+
+#### 비선점형
+* FCFS, SJF, 우선순위
+
 #### SRT (Shortest Remaining Time)
 * 선점형 CPU 스케줄링 알고리즘
 * `남은 시간이 가장 적은` 프로세스를 실행
