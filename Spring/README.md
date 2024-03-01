@@ -251,7 +251,11 @@
 <div markdown="1"> 
 
 * 클라이언트의 요청을 처리해 결과 반환, 웹 페이지를 동적으로 생성하기 위한 서버측 프로그램
-* Spring MVC에서 `Controller` 역할 수행 
+* Spring MVC에서 `Controller` 역할 수행
+
+#### jsp 와 servlet의 차이점
+
+* 두 기술 모두 자바 기반으로 웹 프로그래밍을 수행하기 위해 존재하는 기술이다. servlet은 java 코드안에 html 언어를 작성하는 방식이지만, jsp는 반대로 html 언어 안에 java 코드를 작성한다. jsp는 servlet의 불편함을 극복하기 위해 고안된 기술이고, jsp는 컴파일될 때 서블릿으로 한 번 변환된 후 컴파일 된다는 특성이 있다.
 
 </div>
 </details>
